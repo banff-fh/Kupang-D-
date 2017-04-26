@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-engine-xml>
+    <SecurityPermission description="View operations in the Promote Component." permissionId="PROMOTE_VIEW"/>
+    <SecurityPermission description="Create operations in the Promote Component." permissionId="PROMOTE_CREATE"/>
+    <SecurityPermission description="Update operations in the Promote Component." permissionId="PROMOTE_UPDATE"/>
+    <SecurityPermission description="Delete operations in the Promote Component." permissionId="PROMOTE_DELETE"/>
+    <SecurityPermission description="ALL operations in the Promote Component." permissionId="PROMOTE_ADMIN"/>
+    <SecurityGroupPermission groupId="FULLADMIN" permissionId="PROMOTE_ADMIN"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PROMOTE_CREATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PROMOTE_DELETE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PROMOTE_UPDATE"/>
+    <SecurityGroupPermission groupId="FLEXADMIN" permissionId="PROMOTE_VIEW"/>
+    <SecurityGroupPermission groupId="VIEWADMIN" permissionId="PROMOTE_VIEW"/>
+    <SecurityGroupPermission groupId="BIZADMIN" permissionId="PROMOTE_ADMIN"/>
+</entity-engine-xml>
