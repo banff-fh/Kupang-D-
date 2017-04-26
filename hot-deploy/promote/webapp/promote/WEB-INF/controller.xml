@@ -8,6 +8,13 @@
     <include location="component://promote/webapp/promote/WEB-INF/query_controller.xml"/>
 
     <description>Promote Component Site Configuration File</description>
+	
+	<request-map uri="json">
+        <security direct-request="false"/>
+        <event type="java" path="com.banfftech.kupangpromote.common.CommonEvents" invoke="jsonResponseForCloudCard"/>
+        <response name="success" type="none"/>
+    </request-map>
+
 
     <!-- Events to run on every request before security (chains exempt) -->
     <!--

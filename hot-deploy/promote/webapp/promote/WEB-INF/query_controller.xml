@@ -5,5 +5,10 @@
 
     <description>Promote Component Site Configuration File</description>
 
+	<request-map uri="json">
+        <security direct-request="false"/>
+        <event type="java" path="com.banfftech.kupangpromote.common.CommonEvents" invoke="jsonResponseForCloudCard"/>
+        <response name="success" type="none"/>
+    </request-map>
     
 </site-conf>
